@@ -8,8 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.ViewGroup;
 
-import java.util.List;
-
 /**
  * @author Aidan Follestad (afollestad)
  */
@@ -133,15 +131,5 @@ public abstract class SectionedRecyclerViewAdapter<VH extends RecyclerView.ViewH
         }
         if (layoutParams != null)
             holder.itemView.setLayoutParams(layoutParams);
-    }
-
-    /**
-     * @hide
-     * @deprecated
-     */
-    @Deprecated
-    @Override
-    public final void onBindViewHolder(VH holder, int position, List<Object> payloads) {
-        super.onBindViewHolder(holder, position, payloads);
     }
 }
